@@ -1,0 +1,173 @@
+body {
+    background-color: #58295A;
+}
+
+.containerChat {
+    background-color:#DDDDDD;
+    font-family: helvetica;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 500px;
+    width: 1100px;
+    padding-bottom: 50px;
+    font-size: 12px;
+    overflow-y: scroll;
+}
+.containerChannel {
+    background-color: rgb(113, 55, 115);
+    color: white;
+    font-family: helvetica;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 615px;
+    width: 200px;
+    padding-left: 20px;
+    overflow-y: scroll;
+    border-radius: 10px 0px 0px 10px;
+}
+.containerMessaje {
+    background-color: #FFFFFF;
+}
+.botonCreate {
+    background-color: white;
+    color: #58295A;
+    font-family: helvetica;
+    position: relative;
+    left: 600px;
+    top: -30px;
+    padding: 10px ;
+    border-radius: 8px;
+    border-color: #58295A;
+
+}
+.containerMessaje {
+    box-sizing: border-box;
+    height: 120px;
+    width: 1100px;
+    margin: 10px;
+    border-radius: 8px;
+    border: gray 2px solid;
+}
+.iconTopChat {
+    background-color: #e9e5e5;
+    border-radius: 8px 8px 0px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+.inputChat {
+    background-color: white;
+    font-family: "helvetica"; 
+    width: 1088px;
+    height: 40px;
+    border: none;
+}
+.iconBottomChat {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.buttonSend {
+    border: none;
+    background-color: white;
+    color: #924094;
+    border-radius: 8px;
+    position: relative;
+    left: 790px;
+    top: 5px;
+}
+.box {
+    display: flex;
+}
+.boxChat {
+    position: relative;
+    left: -1110px;
+    top: 487px;
+    height: 5px;
+} 
+.titleForm {
+    color: white;
+    text-align: center;
+    font-family: "helvetica";
+
+}
+.form {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: helvetica;
+    position: absolute;
+    left: 250px;
+    background-color: rgb(231, 207, 207);
+    width: 900px;
+    border-radius: 10px;
+    border: gray 2px solid; 
+}
+.botonInitiation {
+    position: relative;
+    left: 450px;
+    top: -60px;
+    font-family: helvetica;
+    background-color: #924094;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+label {
+    font-size: 15px;
+    margin-left: 30px;
+}
+.nameMensaje {
+    font-weight: bold;
+    font-size: 15px;
+}
+@media screen and (max-width: 325px) {
+    .form {
+        position: relative;
+        left: 10px;
+        width: 300px;
+        height: 500px;
+    }
+    .botonCreate { 
+        left: 30px;
+        top: 10px;
+    }
+    .botonInitiation {
+        left: 10px;
+        top: -40px;
+    }
+    .containerChannel { 
+        height: 200px;
+        width: 300px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .containerChat {
+        height: 300px;
+        width: 295px;
+        border-radius: 10px;
+    }
+    .boxChat {
+        top: -5px;
+        left: -12px;
+    }
+    .containerMessaje {
+        width: 295px;
+    }
+    .inputChat {
+        width: 285px;
+    }
+    .buttonSend {
+        left: -2px;
+        top: 2px;
+    }
+    .inputCanal {
+        width: 270px;
+    }
+    .imgWorks {
+        width: 50%;
+        height: 50%;
+    }
+}

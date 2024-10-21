@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const HomePage = () => {
 
-    const canal = [
+    const initialCanal = [
         {
             id: "1",
             nombreCanal: "Consultas"
@@ -53,13 +53,22 @@ const HomePage = () => {
     ]
     
     const [mensajes, setMensajes] = useState(initialMensajes)
+    const storagedCanales = JSON.parse(localStorage.getItem('workspaces')) || initialCanal
+
+    const [canal, setCanal] = useState(storagedCanales)
 
     return (
-        <>
-            <ListaCanales canales={canal} titulo={"Canales"} />
-            <ListaMensajes mensajes={mensajes} titulo={"Mensajes directos"} />
+        <div className='box'>
+            <div>
+            <ListaCanales canales={canal} titulo={"Canales"} setCanal={initialCanal} />
+            </div>
+            <div>
+            <ListaMensajes mensajes={mensajes} titulo={"Consultas"} />
+            </div>
+            <div className='boxChat'>
             <Chat mensajes={mensajes} setMensajes={setMensajes} />
-        </>
+            </div>
+        </div>
     )
 }
 
